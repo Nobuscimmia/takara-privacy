@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Takara — Privacy Policy & Play Store Listing</title>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@700&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0c1220; --gold: #c9a040; --paper: #f7f3ec;
+    --paper-dk: #ede8de; --border: #ddd8ce; --muted: #8a7f6e;
+    --green: #2a7a4b;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--paper); color:var(--ink); font-family:'DM Sans',sans-serif;
+         font-size:15px; line-height:1.7; }
+
+  header { background:var(--ink); padding:40px 64px; }
+  .logo  { font-family:'Shippori Mincho',serif; font-size:28px; color:white; letter-spacing:0.1em; }
+  .logo span { color:var(--gold); }
+  .header-sub { font-family:'DM Mono',monospace; font-size:10px; letter-spacing:0.2em;
+                color:rgba(255,255,255,0.35); text-transform:uppercase; margin-top:8px; }
+
+  .tabs { display:flex; border-bottom:2px solid var(--border); background:white; }
+  .tab  { padding:16px 32px; font-family:'DM Mono',monospace; font-size:11px;
+           letter-spacing:0.15em; text-transform:uppercase; cursor:pointer;
+           border-bottom:3px solid transparent; margin-bottom:-2px; color:var(--muted);
+           background:none; border-top:none; border-left:none; border-right:none;
+           transition:all 0.15s; }
+  .tab.active { color:var(--ink); border-bottom-color:var(--gold); }
+
+  .panel { display:none; }
+  .panel.active { display:block; }
+
+  .page { max-width:800px; margin:0 auto; padding:56px 48px; }
+
+  /* PRIVACY POLICY */
+  .pp-header { margin-bottom:40px; }
+  .pp-date { font-family:'DM Mono',monospace; font-size:11px; letter-spacing:0.15em;
+             color:var(--muted); margin-bottom:16px; }
+  .pp-title { font-family:'Shippori Mincho',serif; font-size:36px; font-weight:700;
+              line-height:1.2; margin-bottom:16px; }
+  .pp-intro { font-size:16px; color:#444; border-left:3px solid var(--gold);
+              padding-left:20px; font-style:italic; }
+
+  h2 { font-family:'Shippori Mincho',serif; font-size:22px; font-weight:700;
+       margin:40px 0 14px; padding-bottom:10px; border-bottom:1px solid var(--border); }
+  p  { color:#333; margin-bottom:14px; }
+  ul { margin:10px 0 14px 20px; color:#333; }
+  li { margin-bottom:8px; line-height:1.6; }
+
+  .highlight { background:var(--paper-dk); border-left:3px solid var(--green);
+               padding:16px 20px; margin:20px 0; border-radius:0 6px 6px 0; }
+  .highlight strong { color:var(--green); }
+
+  .copy-box {
+    background:var(--ink); color:#e0dbd2; border-radius:8px;
+    padding:24px; margin:16px 0; position:relative; font-size:14px; line-height:1.8;
+    white-space:pre-wrap; font-family:'DM Sans',sans-serif;
+  }
+  .copy-btn {
+    position:absolute; top:12px; right:12px;
+    background:rgba(201,160,64,0.15); border:1px solid rgba(201,160,64,0.3);
+    border-radius:6px; color:var(--gold); font-family:'DM Mono',monospace;
+    font-size:10px; letter-spacing:0.1em; padding:6px 12px; cursor:pointer;
+    transition:background 0.15s;
+  }
+  .copy-btn:hover { background:rgba(201,160,64,0.25); }
+  .copy-btn.copied { background:rgba(42,122,75,0.2); border-color:rgba(42,122,75,0.4);
+                     color:#72dc9a; }
+
+  .field-block { margin-bottom:28px; }
+  .field-label { font-family:'DM Mono',monospace; font-size:10px; letter-spacing:0.2em;
+                 text-transform:uppercase; color:var(--gold); margin-bottom:8px; }
+  .char-count  { font-family:'DM Mono',monospace; font-size:10px; color:var(--muted);
+                 margin-top:6px; }
+  .char-ok   { color:var(--green); }
+  .char-over { color:#c0391a; }
+
+  .tag { display:inline-block; padding:4px 10px; background:var(--paper-dk);
+         border:1px solid var(--border); border-radius:4px; font-family:'DM Mono',monospace;
+         font-size:11px; margin:3px; cursor:pointer; transition:all 0.15s; }
+  .tag:hover { border-color:var(--gold); color:var(--gold); }
+
+  footer { background:var(--ink); padding:32px 64px; margin-top:80px; }
+  footer p { font-family:'DM Mono',monospace; font-size:10px; letter-spacing:0.1em;
+             color:rgba(255,255,255,0.25); text-align:center; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">TAKARA <span>宝</span></div>
+  <div class="header-sub">Play Store Toolkit — Privacy Policy & Listing</div>
+</header>
+
+<div class="tabs">
+  <button class="tab active" onclick="showTab('privacy')">Privacy Policy</button>
+  <button class="tab" onclick="showTab('listing')">Scheda Play Store</button>
+</div>
+
+<!-- ══════════════ PRIVACY POLICY ══════════════ -->
+<div id="tab-privacy" class="panel active">
+<div class="page">
+
+  <div class="pp-header">
+    <div class="pp-date">Ultimo aggiornamento: Aprile 2026</div>
+    <div class="pp-title">Privacy Policy<br>di Takara</div>
+    <p class="pp-intro">Questa Privacy Policy descrive come Takara raccoglie, usa e protegge le informazioni degli utenti dell'applicazione mobile Takara ("l'App").</p>
+  </div>
+
+  <div class="highlight">
+    <strong>In sintesi:</strong> Takara non raccoglie, non trasmette e non vende alcun dato personale a terzi. Tutti i dati della tua collezione sono salvati esclusivamente sul tuo dispositivo.
+  </div>
+
+  <h2>1. Informazioni che raccogliamo</h2>
+  <p>Takara è progettata con la privacy come priorità. L'App funziona principalmente in locale sul tuo dispositivo e <strong>non richiede la creazione di un account</strong>.</p>
+  <p>Le uniche informazioni gestite dall'App sono:</p>
+  <ul>
+    <li><strong>Dati della collezione</strong>: titoli, autori, note e altri dettagli degli item che inserisci manualmente o tramite scansione barcode. Questi dati sono salvati esclusivamente nella memoria locale del tuo dispositivo (localStorage).</li>
+    <li><strong>Preferenze dell'app</strong>: impostazioni come il piano (gratuito/premium), salvate localmente sul dispositivo.</li>
+  </ul>
+
+  <h2>2. Come usiamo le informazioni</h2>
+  <p>I dati inseriti vengono utilizzati esclusivamente per:</p>
+  <ul>
+    <li>Visualizzare e gestire la tua collezione personale all'interno dell'App</li>
+    <li>Generare statistiche locali sulla tua collezione</li>
+    <li>Esportare i tuoi dati in formato CSV su tua richiesta (funzione Premium)</li>
+  </ul>
+
+  <h2>3. Servizi di terze parti</h2>
+  <p>L'App utilizza i seguenti servizi esterni, esclusivamente su richiesta esplicita dell'utente (durante la scansione del barcode):</p>
+  <ul>
+    <li><strong>Google Books API</strong>: per recuperare informazioni su libri e manga tramite ISBN. Google può raccogliere dati secondo la propria <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>.</li>
+    <li><strong>Open Library API</strong>: servizio alternativo di ricerca ISBN gestito da Internet Archive.</li>
+  </ul>
+  <p>Questi servizi vengono contattati solo quando l'utente scansiona un barcode. Nessun dato personale viene trasmesso a questi servizi.</p>
+
+  <h2>4. Acquisti in-app</h2>
+  <p>L'App offre un abbonamento Premium tramite <strong>Google Play Billing</strong>. Tutti i pagamenti sono gestiti direttamente da Google secondo le loro politiche. Takara non raccoglie né conserva alcun dato di pagamento.</p>
+
+  <h2>5. Permessi richiesti</h2>
+  <p>L'App richiede i seguenti permessi Android:</p>
+  <ul>
+    <li><strong>CAMERA</strong>: utilizzata esclusivamente per la scansione del barcode quando richiesta dall'utente. Le immagini della fotocamera non vengono mai salvate o trasmesse.</li>
+    <li><strong>INTERNET</strong>: utilizzata per le ricerche ISBN tramite Google Books API e per il caricamento delle copertine.</li>
+  </ul>
+
+  <h2>6. Conservazione dei dati</h2>
+  <p>Tutti i dati della collezione sono conservati esclusivamente sul dispositivo dell'utente tramite localStorage del browser. La disinstallazione dell'App comporta la cancellazione permanente di tutti i dati locali.</p>
+
+  <h2>7. Minori</h2>
+  <p>Takara non è destinata a bambini di età inferiore a 13 anni e non raccoglie consapevolmente informazioni personali da minori di 13 anni.</p>
+
+  <h2>8. Modifiche a questa Privacy Policy</h2>
+  <p>Potremmo aggiornare questa Privacy Policy periodicamente. Le modifiche saranno comunicate tramite aggiornamento dell'App sul Google Play Store. L'uso continuato dell'App dopo le modifiche costituisce accettazione della nuova policy.</p>
+
+  <h2>9. Contatti</h2>
+  <p>Per qualsiasi domanda riguardante questa Privacy Policy, puoi contattarci all'indirizzo email indicato nella scheda del Play Store.</p>
+
+  <div style="margin-top:40px;padding:24px;background:white;border:1px solid var(--border);border-radius:8px;">
+    <div class="field-label" style="margin-bottom:12px;">Come pubblicare la Privacy Policy</div>
+    <ol style="margin-left:20px;color:#444;line-height:2.2;font-size:14px;">
+      <li>Carica questo file HTML su un hosting gratuito — es. <strong>GitHub Pages</strong> (gratuito) o <strong>Netlify</strong> (gratuito)</li>
+      <li>Copia l'URL pubblico (es. <code>https://tuonome.github.io/takara-privacy</code>)</li>
+      <li>Incollalo nella sezione <strong>"Privacy Policy"</strong> di Google Play Console durante la creazione dell'app</li>
+    </ol>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════ PLAY STORE LISTING ══════════════ -->
+<div id="tab-listing" class="panel">
+<div class="page">
+
+  <h2 style="margin-top:0;border:none;padding:0;font-size:28px;">Testo per la scheda Play Store</h2>
+  <p style="color:var(--muted);margin-bottom:32px;">Copia e incolla questi testi direttamente in Google Play Console. I limiti di caratteri sono già rispettati.</p>
+
+  <!-- TITLE -->
+  <div class="field-block">
+    <div class="field-label">Titolo App — max 30 caratteri</div>
+    <div class="copy-box" id="txt-title">Takara — Tracker Collezioni<button class="copy-btn" onclick="copyText('txt-title',this)">Copia</button></div>
+    <div class="char-count"><span class="char-ok">✓ 28 / 30 caratteri</span></div>
+  </div>
+
+  <!-- SHORT DESC -->
+  <div class="field-block">
+    <div class="field-label">Descrizione breve — max 80 caratteri</div>
+    <div class="copy-box" id="txt-short">Cataloga manga, libri, carte TCG, vinili e tutta la tua collezione.<button class="copy-btn" onclick="copyText('txt-short',this)">Copia</button></div>
+    <div class="char-count"><span class="char-ok">✓ 67 / 80 caratteri</span></div>
+  </div>
+
+  <!-- LONG DESC -->
+  <div class="field-block">
+    <div class="field-label">Descrizione completa — max 4000 caratteri</div>
+    <div class="copy-box" id="txt-long">Takara (宝) — il tuo tesoro, organizzato.
+
+Takara è il tracker universale per collezionisti. Che tu collezzioni manga, fumetti, libri, carte TCG, videogiochi, vinili, action figure, LEGO, sneakers o qualsiasi altra cosa — Takara ti aiuta a tenere tutto sotto controllo.
+
+🎌 CATEGORIE SUPPORTATE
+• Fumetti & Manga — con tracker volumi per serie e variant
+• Libri — con ricerca ISBN automatica
+• Carte TCG — Pokémon, Magic, One Piece, Yu-Gi-Oh!
+• Videogiochi — con piattaforma, regione e condizione
+• Vinili & CD — con pressing e condizione Goldmine
+• Action Figure & Statues — Funko Pop, Nendoroid, S.H.Figuarts
+• LEGO — con numero set e percentuale completamento
+• Francobolli & Monete/Banconote
+• Sneakers — con colorway, taglia e condizione
+• Raccolte personalizzate — crea le tue categorie
+
+📱 FUNZIONI PRINCIPALI
+• Scanner barcode — scansiona l'ISBN e l'app compila titolo, autore ed editore automaticamente
+• Raggruppa per serie — i volumi di Naruto con Naruto, MHA con MHA
+• Vista per autore — naviga la collezione manga per autore → serie → volumi
+• Volumi mancanti — vedi con un colpo d'occhio quali volumi ti mancano
+• Wishlist dedicata — tieni traccia di cosa vuoi comprare
+• Statistiche — donut chart, volumi posseduti vs mancanti, serie complete
+• Ordinamento e filtri — per data, titolo, stato
+• Ricerca globale — cerca in tutta la collezione
+
+🆓 PIANO GRATUITO
+Fino a 100 item totali, tutte le funzioni base incluse. Nessuna pubblicità.
+
+⭐ TAKARA PREMIUM
+• Item illimitati
+• Export CSV della collezione
+• Funzioni avanzate in arrivo
+
+🔒 PRIVACY
+Tutti i dati sono salvati esclusivamente sul tuo dispositivo. Nessun account richiesto. Nessun dato venduto a terzi.
+
+Takara è sviluppata da un collezionista, per i collezionisti.
+<button class="copy-btn" onclick="copyText('txt-long',this)">Copia</button></div>
+    <div class="char-count"><span class="char-ok">✓ ~1.650 / 4.000 caratteri</span></div>
+  </div>
+
+  <!-- CATEGORY -->
+  <div class="field-block">
+    <div class="field-label">Categoria Play Store</div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;">
+      <span class="tag" style="border-color:var(--gold);color:var(--gold);background:rgba(201,160,64,0.08);">✓ Lifestyle</span>
+      <span class="tag">Produttività</span>
+      <span class="tag">Libri e riferimenti</span>
+    </div>
+    <p style="font-size:13px;color:var(--muted);margin-top:10px;">
+      <strong>Consigliato: Lifestyle</strong> — è la categoria con meno concorrenza per app di collezione e raggiunge il pubblico giusto.
+    </p>
+  </div>
+
+  <!-- KEYWORDS -->
+  <div class="field-block">
+    <div class="field-label">Parole chiave per ASO (App Store Optimization)</div>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:12px;">Inseriscile naturalmente nel titolo e nella descrizione. Già incluse nel testo sopra.</p>
+    <div>
+      <span class="tag">tracker collezione</span>
+      <span class="tag">manga tracker</span>
+      <span class="tag">catalogo fumetti</span>
+      <span class="tag">collezione libri</span>
+      <span class="tag">pokemon tracker</span>
+      <span class="tag">TCG collection</span>
+      <span class="tag">vinyl tracker</span>
+      <span class="tag">collezione videogiochi</span>
+      <span class="tag">inventario collezione</span>
+      <span class="tag">organizza collezione</span>
+      <span class="tag">barcode scanner collezione</span>
+      <span class="tag">manga collection</span>
+    </div>
+  </div>
+
+  <!-- CONTENT RATING -->
+  <div class="field-block">
+    <div class="field-label">Classificazione contenuti</div>
+    <div style="background:white;border:1px solid var(--border);border-radius:8px;padding:20px;">
+      <p style="margin:0;font-size:14px;"><strong>Rating consigliato: Per tutti (PEGI 3 / Everyone)</strong><br>
+      <span style="color:var(--muted);">L'app non contiene violenza, linguaggio inappropriato o contenuti per adulti.</span></p>
+    </div>
+  </div>
+
+  <!-- SCREENSHOTS GUIDE -->
+  <div class="field-block">
+    <div class="field-label">Guida screenshot — cosa catturare</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px;">
+      <div style="background:white;border:1px solid var(--border);border-radius:8px;padding:16px;">
+        <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);margin-bottom:8px;">Screenshot 1 — Home</div>
+        <p style="font-size:13px;color:#444;margin:0;">La schermata home con tutte le 10 categorie visibili. Mostra la varietà dell'app.</p>
+      </div>
+      <div style="background:white;border:1px solid var(--border);border-radius:8px;padding:16px;">
+        <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);margin-bottom:8px;">Screenshot 2 — Collezione Manga</div>
+        <p style="font-size:13px;color:#444;margin:0;">Lista manga raggruppata per serie con barre progresso volumi.</p>
+      </div>
+      <div style="background:white;border:1px solid var(--border);border-radius:8px;padding:16px;">
+        <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);margin-bottom:8px;">Screenshot 3 — Vista Autore</div>
+        <p style="font-size:13px;color:#444;margin:0;">Griglia volumi con quelli posseduti (verde) e mancanti (rosso).</p>
+      </div>
+      <div style="background:white;border:1px solid var(--border);border-radius:8px;padding:16px;">
+        <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);margin-bottom:8px;">Screenshot 4 — Scanner</div>
+        <p style="font-size:13px;color:#444;margin:0;">Schermata scanner con mirino dorato attivo su un libro/manga.</p>
+      </div>
+      <div style="background:white;border:1px solid var(--border);border-radius:8px;padding:16px;">
+        <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);margin-bottom:8px;">Screenshot 5 — Statistiche</div>
+        <p style="font-size:13px;color:#444;margin:0;">Pagina statistiche con donut chart e pannello volumi manga.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<footer>
+  <p>TAKARA 宝 · Play Store Toolkit · 2026</p>
+</footer>
+
+<script>
+function showTab(name) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  event.target.classList.add('active');
+}
+
+function copyText(id, btn) {
+  const el   = document.getElementById(id);
+  const text = el.innerText.replace('Copia','').replace('Copiato!','').trim();
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = 'Copiato!';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = 'Copia';
+      btn.classList.remove('copied');
+    }, 2000);
+  });
+}
+</script>
+</body>
+</html>
